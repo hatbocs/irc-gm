@@ -1,6 +1,8 @@
 # Instagram Request Canceler for Greasemonkey
 
-A GM script to cancel pending follow requests on Instagram.
+A GM script to cancel pending follow requests on Instagram. Ideally this would be handled through the API, but Facebook hasn't opened it up to non-business accounts. So we're stuck with something like this.
+
+Needed to handle someone breaking into my account and trying to request thousands of follows.
 
 ## Usage
 
