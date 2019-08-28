@@ -63,7 +63,7 @@ async function openIFrameToCancel(username) {
   let unfollow = undefined;
   
   for (let i = 0; i < buttons.length; i++) {
-    if (buttons[i].innerText == "Unfollow") {unfollow = buttons[i];/*button[i].click()*/};
+    if (buttons[i].innerText == "Unfollow") {buttons[i].click()*;
   }
   
   return true;
