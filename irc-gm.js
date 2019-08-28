@@ -45,7 +45,7 @@ async function openIFrameToCancel(username) {
   let cancelFrame = document.getElementById("cancelFrame");
   let name = (typeof(username) == "object") ? username.target.value : username;
   
-  console.log("canceling " + "https://www.instagram.com/" + name);
+  //console.log("canceling " + "https://www.instagram.com/" + name);
   
   let promise = new Promise ((resolve, reject) => {
     cancelFrame.onload = () => resolve(document.getElementById("cancelFrame").contentWindow.document);
@@ -67,29 +67,6 @@ async function openIFrameToCancel(username) {
   }
   
   return true;
-}
-
-async function checkUnfollowPopup(mutationList, observer) {
-  var theFrame = document.getElementById("cancelFrame").contentWindow.document;
-  
-  console.log(mutationList);
-  
-  mutationList.forEach((mutation) => {
-    mutation.addedNodes.forEach((node) => {
-      //click the unfollow
-      if (node.getAttribute('role') == "presentation") {
-        
-        let buttons = theFrame.getElementsByTagName("button");
-        let unfollow = undefined;
-        
-        for (let i = 0; i < buttons.length; i++) {
-          if (buttons[i].innerText == "Unfollow") {unfollow = buttons[i]};
-        }
-        
-    		unfollow.click();
-      };
-    });
-  });
 }
 
 function makeUserCancelButton(name) {
