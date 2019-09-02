@@ -138,7 +138,7 @@ function addCancelAllOptions() {
 	cancelDiv.id = "options";
 	
 	let cancelBtn = document.createElement("button");
-	cancelBtn.innerText = "Cancel All Requets";
+	cancelBtn.innerText = "Cancel All Requests";
 	cancelBtn.className = btnCopy.className;
 	cancelBtn.style.padding = "2px 9px";
 	cancelBtn.onclick = cancelAllRequests;
