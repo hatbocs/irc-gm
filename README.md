@@ -4,6 +4,8 @@ A GM script to cancel pending follow requests on Instagram. Ideally this would b
 
 Needed to handle someone breaking into my account and trying to request thousands of follows.
 
+![Image Showing Usage](https://github.com/hatbocs/irc-gm/blob/master/usage.png)
+
 ## Usage
 
 Install the script like normal and point your browser to the Current Follow Requests page on Instagram.
